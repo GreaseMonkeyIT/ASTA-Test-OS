@@ -1,0 +1,53 @@
+# ==========================
+
+# Buildroot
+
+# ==========================
+
+
+buildroot/
+output/
+
+*.img
+*.ext2
+*.ext4
+*.vfat
+*.tar
+*.tar.gz
+*.tar.xz
+
+*.log
+build.log
+
+*.tmp
+*.swp
+*.swo
+
+# Docker
+
+.dockerignore
+docker-compose.override.yml
+
+# IDE
+
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Python host artifacts
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Backups
+
+*~
+*.bak
+*.orig

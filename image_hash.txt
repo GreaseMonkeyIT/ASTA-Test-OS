@@ -1,0 +1,1 @@
+ade7ff785bb752d413977b34aeb0ec25e808d25e51c55f7b7423c69baa2d622f  output/images/sdcard.img
