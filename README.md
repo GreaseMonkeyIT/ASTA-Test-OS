@@ -3,11 +3,11 @@
 ## Overview
 
 This repository contains a fully reproducible Buildroot-based Linux
-distribution for the Raspberry Pi Zero 2 W (AArch64).
+distribution for the Raspberry Pi Zero 2 W (arm).
 
 The system provides:
 
--   64-bit ARMv8 userspace (AArch64)
+-   32-bit ARMv7 userspace (ARMv7-A)
 -   Bootlin external glibc toolchain
 -   Custom Raspberry Pi kernel (bcm2711-based)
 -   Xorg + Fluxbox lightweight window manager
@@ -25,14 +25,14 @@ The system provides:
 
 -   Board: Raspberry Pi Zero 2 W
 -   SoC: BCM2710A1 (Cortex-A53)
--   Architecture: ARMv8-A (AArch64)
+-   Architecture: ARMv7-A (32-bit)
 -   FPU: VFPv4
 
 
 ## Toolchain
 
 -   Provider: Bootlin
--   Architecture: AArch64
+-   Architecture: arm
 -   C Library: glibc (stable)
 -   CCache enabled
 
@@ -43,7 +43,7 @@ The system provides:
 -   Kernel defconfig: bcm2711
 -   Device Tree: broadcom/bcm2710-rpi-zero-2-w
 -   Firmware: RPI firmware (Pi variant)
--   Custom firmware config: config_zero2w_64bit.txt
+-   Custom firmware config: zero2w_minimal_defconfig.txt
 
 
 ## Graphics Stack
