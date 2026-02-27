@@ -1,0 +1,40 @@
+$ fdisk -l sdcard.img:
+Disk sdcard.img: 152 MiB, 159384064 bytes, 311297 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000000
+
+Device      Boot Start    End Sectors  Size Id Type
+sdcard.img1 *        1  65536   65536   32M  c W95 FAT32 (LBA)
+sdcard.img2      65537 311296  245760  120M 83 Linux
+
+$ du -h sdcard.img:
+43M     sdcard.img
+
+$ sudo du -sh /mnt/pi-root:
+27M     /mnt/pi-root
+
+$ ls -1 /mnt/pi-root:
+bin
+dev
+etc
+lib
+lib32
+linuxrc
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+sys
+tmp
+usr
+var
+
+$ sudo strings /mnt/pi-root/lib/modules/*/modules.dep | head -n 1:
+kernel/arch/arm/crypto/aes-arm.ko.xz:
